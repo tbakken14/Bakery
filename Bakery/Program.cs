@@ -1,10 +1,9 @@
 using System;
 
-namespace Project{
+namespace Bakery{
     class Program {
         static void Main() {
-            Console.WriteLine("hello");
-            Anagram.isAnagram("hello", "world");
+            Console.WriteLine(UserInterfaceModels.Banners.header);
         }
     }
 }
