@@ -1,7 +1,7 @@
 namespace Bakery.Models {
     public class Bread : IFoodItem {
         private int _quantity;
-        private int _price = 2;
+        private int _price = 5;
         public int Quantity {
             get => _quantity;
             set => _quantity = value;
