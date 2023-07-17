@@ -1,21 +1,28 @@
-namespace Bakery.Models {
-    public class Pastry : IFoodItem {
+namespace Bakery.Models
+{
+    public class Pastry : IFoodItem
+    {
         private int _quantity;
         private int _price = 2;
-        public int Quantity {
+        public int Quantity
+        {
             get => _quantity;
             set => _quantity = value;
         }
-        public int Price {
+        public int Price
+        {
             get => _price;
         }
-        public Pastry() {
+        public Pastry()
+        {
             Quantity = 0;
         }
-        public Pastry(int quantity) {
+        public Pastry(int quantity)
+        {
             Quantity = quantity;
         }
-        public int getCost() {
+        public int getCost()
+        {
             return Quantity * Price - Quantity / 3 * Price;
         }
     }
