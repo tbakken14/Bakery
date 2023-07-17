@@ -16,8 +16,15 @@ namespace Bakery.Models {
         }
 
         [TestMethod]
-        public void pastry_cost_tests() {
-            Assert.IsTrue(true);
+        [DataRow (1, 2)]
+        [DataRow (2, 4)]
+        [DataRow (3, 4)]
+        [DataRow (4, 6)]
+        [DataRow (5, 8)]
+        [DataRow (6, 8)]
+        public void pastry_cost_tests(int quantity, int result) {
+            Pastry pastry = new Pastry(quantity);
+            Assert.AreEqual(pastry.getCost(), result);
         }
     }
 }
