@@ -17,7 +17,6 @@ namespace Bakery.Models {
             Quantity = quantity;
         }
         public int getCost() {
-            
             return Quantity * Price - Quantity / 3 * Price;
         }
     }
