@@ -1,5 +1,5 @@
 namespace Bakery.Models {
-    class Bread : IFoodItem {
+    public class Bread : IFoodItem {
         private int _quantity;
         private int _price = 2;
         public int Quantity {

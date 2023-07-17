@@ -1,5 +1,5 @@
 namespace Bakery.Models {
-    interface IFoodItem {
+    public interface IFoodItem {
         public int getCost();
     }
 }
